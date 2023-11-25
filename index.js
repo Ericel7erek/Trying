@@ -8,8 +8,6 @@ const io = socketIO(server);
 
 app.use(express.static('public'));
 
-// ...
-
 io.on('connection', (socket) => {
   console.log('A user connected');
 
@@ -26,9 +24,6 @@ io.on('connection', (socket) => {
     console.log('User disconnected');
   });
 });
-
-// ...
-
 
 const PORT = process.env.PORT || 3000;
 
