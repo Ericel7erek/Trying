@@ -22,5 +22,6 @@ function sendMessage() {
 
     // Clear the input field after sending a message
     messageInput.value = '';
-  }
+  }//s
 }
+//s
