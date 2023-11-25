@@ -8,6 +8,8 @@ const io = socketIO(server);
 
 app.use(express.static('public'));
 
+// ...
+
 io.on('connection', (socket) => {
   console.log('A user connected');
 
@@ -22,6 +24,11 @@ io.on('connection', (socket) => {
   // Listen for disconnection
   socket.on('disconnect', () => {
     console.log('User disconnected');
+  });
+});
+
+// ...
+
   });
 });
 
